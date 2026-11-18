@@ -1,0 +1,14 @@
+{
+    "default":{
+        "path": ["features/*.feature"],
+        "require": ["features/step_definitions/*.ts",
+                   "features/hooks/hooks.ts",
+                   "features/hooks/custom_world.ts"
+                ],
+        "requireModule": ["ts-node/register"],
+        "format": [
+            "progress",
+            "json:./reports/cucumber-report.json"            
+        ]
+    }
+}
